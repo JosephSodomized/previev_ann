@@ -45,3 +45,9 @@
 .padding{
     padding-top: 8px;
 }
+
+.fa-ellipsis-h{
+    position: absolute;
+    right: 40px;
+    color: black;
+}

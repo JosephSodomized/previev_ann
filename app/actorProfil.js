@@ -19,13 +19,13 @@ function actorPanel(person, age) {
               </div>
               <div>
                 <!-- cechy wyglądu 
-        <div class="row py-1">
+        <div class="row pt-1">
           <div class="col">
             <span class="line">Cechy wyglądu</span>
           </div>
         </div> -->
                 <!-- 1 wiersz -->
-                <div class="row py-1">
+                <div class="row pt-1">
                   <div class="col">
                     <label style="font-size:10px;" for="eyes">Kolor oczu</label>
                     <div class="input-group input-group-sm">
@@ -50,7 +50,7 @@ function actorPanel(person, age) {
                   </div>
                 </div>
                 <!-- 2 wiersz -->
-                <div class="row py-1">
+                <div class="row pt-1">
                   <div class="col">
                     <label style="font-size:10px;" for="weight">Waga</label>
                     <div class="input-group input-group-sm">
@@ -75,7 +75,7 @@ function actorPanel(person, age) {
                   </div>
                 </div>
                 <!-- 3 wiersz -->
-                <div class="row py-1">
+                <div class="row pt-1">
                   <div class="col">
                     <label style="font-size: 10px;" for="hip">Obwód bioder</label>
                     <div class="input-group input-group-sm">
@@ -98,7 +98,7 @@ function actorPanel(person, age) {
               </div>
               <!-- UWAGI -->
               <!-- Uwagi -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="comments">Uwagi</label>
                   <div class="input-group input-group-sm">
@@ -107,7 +107,7 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- Uwagi ocena -->
-              <div class="row py-1 grade_comments">
+              <div class="row pt-1 grade_comments">
                 <div class="col">
                   <label style="font-size:10px;" for="grade_comment">Uwagi do oceny</label>
                   <div class="input-group input-group-sm">
@@ -120,7 +120,7 @@ function actorPanel(person, age) {
             <div class="col ">
 
               <!-- imie nazwisko -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="name">Imie</label>
                   <div class="input-group input-group-sm">
@@ -135,13 +135,13 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- dane kontakowe 
-      <div class="row py-1">
+      <div class="row pt-1">
         <div class="col">
           <span class="line">Dane kontakowe</span>
         </div>
       </div> -->
               <!-- telefon -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="name">Telefon</label>
                   <div class="input-group input-group-sm">
@@ -150,13 +150,13 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- adrres
-      <div class="row py-1">
+      <div class="row pt-1">
         <div class="col">
           <span class="line">Adres</span>
         </div>
       </div> -->
               <!-- ulica-->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="street">Ulica</label>
                   <div class="input-group input-group-sm">
@@ -171,7 +171,7 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- kod_pocztowy -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="post_code">Kod pocztowy</label>
                   <div class="input-group input-group-sm">
@@ -186,7 +186,7 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- województwo -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="voivoidship">Województwo</label>
                   <div class="input-group input-group-sm">
@@ -200,7 +200,7 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- narodowść -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="nation">Narodowść</label>
                   <div class="input-group input-group-sm">
@@ -209,7 +209,7 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- kraj -->
-              <div class="row py-1">
+              <div class="row">
                 <div class="col">
                   <label style="font-size:10px;" for="country">Kraj</label>
                   <div class="input-group input-group-sm">
@@ -218,7 +218,7 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- prawo jazdy -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="driving_license">Prawo jazdy</label>
                   <div class="input-group input-group-sm">
@@ -229,19 +229,19 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- puste -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   &nbsp;
                 </div>
               </div>
               <!-- puste -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   &nbsp;
                 </div>
               </div>
               <!-- doświadczenie -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="experience">Doświadczenie</label>
                   <div class="input-group input-group-sm">
@@ -267,7 +267,7 @@ function actorPanel(person, age) {
             <!-- 3 kolumna -->
             <div class="col">
               <!-- wiek i ocena -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="age">Wiek</label>
                   <div class="input-group input-group-sm">
@@ -287,13 +287,13 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- puste
-      <div class="row py-1">
+      <div class="row pt-1">
         <div class="col">
           <span class="line" style="font-size:13px;">&nbsp;</span>
         </div>
       </div> -->
               <!-- email -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="mail">E-mail</label>
                   <div class="input-group input-group-sm">
@@ -302,13 +302,13 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- empty 
-      <div class="row py-1">
+      <div class="row pt-1">
         <div class="col">
           <span class="line" style="font-size:13px;">&nbsp;</span>
         </div>
       </div> -->
               <!-- data urodzenia -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="date">Data urodzenia</label>
                   <div class="input-group input-group-sm">
@@ -326,7 +326,7 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- wykszyałcenie -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="civil">Stan cywilny</label>
                   <div class="input-group input-group-sm">
@@ -372,12 +372,12 @@ function actorPanel(person, age) {
                 <div class="col">
                   <label style="font-size:10px;" for="hobby">Hobby</label>
                   <div class="input-group input-group-sm">
-                    <textarea class="form-control" name="" id="hobby" rows="3"></textarea>
+                    <textarea class="form-control" name="" id="hobby" rows="2"></textarea>
                   </div>
                 </div>
               </div>
               <!-- umiejętności -->
-              <div class="row padding">
+              <div class="row">
                 <div class="col">
                   <label style="font-size:10px;" for="skills">Umiejętności</label>
                   <div class="input-group input-group-sm">
@@ -400,7 +400,7 @@ function actorPanel(person, age) {
 
             <!-- 4 kolumna -->
             <div class="col">
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="status">Status</label>
                   <div class="input-group input-group-sm">
@@ -413,7 +413,7 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- casting id status -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="casting_id">Casting ID</label>
                   <div class="input-group input-group-sm">
@@ -430,13 +430,13 @@ function actorPanel(person, age) {
 
               </div>
               <!-- puste 
-      <div class="row py-1">
+      <div class="row pt-1">
         <div class="col">
           <span class="line" style="font-size:13px;">&nbsp;</span>
         </div>
       </div> -->
               <!-- archive nr -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="archive_nr">Numer archiwalny</label>
                   <div class="input-group input-group-sm">
@@ -445,13 +445,13 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- puste 
-      <div class="row py-1">
+      <div class="row pt-1">
         <div class="col">
           <span class="line" style="font-size:13px;">&nbsp;</span>
         </div>
       </div> -->
               <!-- archive nr -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="job_category">Kategoria zawodowa</label>
                   <div class="input-group input-group-sm">
@@ -463,13 +463,13 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- puste -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   &nbsp;
                 </div>
               </div>
               <!-- acotr nr -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="actor_category">Kategoria aktorska</label>
                   <div class="input-group input-group-sm">
@@ -480,14 +480,14 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- puste -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   &nbsp;
                 </div>
               </div>
 
               <!-- Język -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="language">Język</label>
                   <div class="input-group input-group-sm">
@@ -511,31 +511,31 @@ function actorPanel(person, age) {
                 </div>
               </div>
               <!-- puste -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   &nbsp;
                 </div>
               </div>
               <!-- puste -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   &nbsp;
                 </div>
               </div>
               <!-- puste -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   &nbsp;
                 </div>
               </div>
               <!-- puste -->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   &nbsp;
                 </div>
               </div>
               <!-- znaki szczególne-->
-              <div class="row py-1">
+              <div class="row pt-1">
                 <div class="col">
                   <label style="font-size:10px;" for="special_signs">Znaki szczególne</label>
                   <div class="input-group input-group-sm">
@@ -557,13 +557,13 @@ function actorPanel(person, age) {
             </div>
 
           </div>
-          <!-- tooltip -->
-          <div class="row">
-            <div class="col text-right">
-              <p style="font-size:10px;">Utworzone przez: `+ person.WhoCreated + ` Ostatnia edycja: ` +
-                person.CreationDate + ` Edytował: ` + person.WhoChanged + `</p>
-            </div>
-          </div>`;
+          <!-- line -->
+        <div class="row">
+          <div class="col text-right">
+            <span class="line2" style="font-size:10px;">Utworzone przez: `+ person.WhoCreated + ` Ostatnia edycja: ` +
+            person.CreationDate + ` Edytował: ` + person.WhoChanged + `</span>
+          </div>
+        </div>`;
 
   return html;
 }

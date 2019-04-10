@@ -562,23 +562,23 @@ function actorPanel(person, age) {
 <div class="row">
  <div class="col">
    <div class="row line2">
-     <div class="col">
+     <div class="col-3">
        <div class="text-right">
 
        </div>
      </div>
      <div class="col text-left">
        <div class="row">
-           <div class="col">
+           <div class="col-9 ">
                <label style="font-size:12px;"><input type="checkbox"> Zgoda na przetwarzanie danych
                  osobowych</label>
            </div>
-         <div class="col-3">
+         <div class="col-3 ">
            <label style="font-size:12px;"><a href="#">Dodaj zgodę</a></label>
          </div>
        </div>
      </div>
-     <div class="col-6">
+     <div class="col">
        <div class="text-right">
          <span style="font-size:10px;">
            Utworzone przez: `+ person.WhoCreated + ` Ostatnia edycja: ` +

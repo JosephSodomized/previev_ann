@@ -47,7 +47,6 @@
 }
 
 .fa-ellipsis-h{
-    position: absolute;
-    right: 40px;
     color: black;
+    margin-right: 20px;
 }

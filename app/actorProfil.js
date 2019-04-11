@@ -10,7 +10,7 @@ function actorPanel(person, age) {
 
   actorAge(person.DateOfBirdth);
 
- html = `
+  html = `
  <div class="row text-right">
  <div class="col">
    <a href="#">
@@ -543,9 +543,9 @@ function actorPanel(person, age) {
        <div class="input-group input-group-sm">
          <select name="" id="skills" class="custom-select">
            <option value="scar">`+ person.SpecialFeatures
-             + `</option>
+    + `</option>
            <option value="scar">`+ person.SpecialFeatures
-             + `</option>
+    + `</option>
          </select>
          <div class="input-group-append">
            <button class="btn btn-secondary" type="button">Wybierz</button>
@@ -582,7 +582,7 @@ function actorPanel(person, age) {
        <div class="text-right">
          <span style="font-size:10px;">
            Utworzone przez: `+ person.WhoCreated + ` Ostatnia edycja: ` +
-           person.CreationDate + ` Edytował: ` + person.WhoChanged + `
+    person.CreationDate + ` Edytował: ` + person.WhoChanged + `
          </span>
        </div>
      </div>
@@ -606,21 +606,60 @@ function actorAge(DOB) {
   return age;
 }
 
-function init(){
-window.addEventListener('load', function(){
-  var addCommentButton =  document.querySelector(".add_comment");
-  var gradeComments =  document.querySelector(".grade_comments");
-  addCommentButton.addEventListener('click', showComments);
+// function init(){
+// window.addEventListener('load', function(){
+//   var addCommentButton =  document.querySelector(".add_comment");
+//   var gradeComments =  document.querySelector(".grade_comments");
+//   addCommentButton.addEventListener('click', showComments);
 
-  function showComments(){
-    $(gradeComments).toggle();
+//   function showComments(){
+//     $(gradeComments).toggle();
+//   }
+//   console.log(gradeComments);
+// })
+// }
+
+// document.addEventListener('readystatechange', function() {
+//   if (document.readyState === "complete") {
+//     init();
+//   }
+// });
+
+//dodawanie linku
+var linkBox = document.querySelector('.link');
+var btnLink = document.querySelector(".add_link_btn");
+var linkGroup = document.querySelector('.link-group');
+var linkInput = document.querySelector('.link-input');
+
+btnLink.addEventListener('click', addLink);
+
+linkBox.style.display = 'none';
+
+function addLink(e) {
+  linkBox.style.display = 'block';
+  if (linkInput.value === '') {
+    alert("Dodaj link");
   }
-  console.log(gradeComments);
-})
+
+  const li = document.createElement('li');
+  li.className = 'list-group-item mx-0';
+  li.appendChild(document.createTextNode(linkInput.value));
+
+  console.log(li);
+
+  linkGroup.appendChild(li);
+
+  linkArr(linkInput.value);
+
+  linkInput.value = '';
+
+  e.preventDefault();
 }
 
-document.addEventListener('readystatechange', function() {
-  if (document.readyState === "complete") {
-    init();
-  }
-});
+var linkArray = [];
+const linkArr = (arr) => {
+  this.arr = arr;
+  linkArray.push(arr);
+  console.log(linkArray);
+}
+

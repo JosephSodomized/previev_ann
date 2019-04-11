@@ -67,6 +67,9 @@
 }
 
 
+.list-group-item{
+    border: 0;
+}
 
 .fas.fa-times-circle:hover{
     color: rgb(255, 0, 0);

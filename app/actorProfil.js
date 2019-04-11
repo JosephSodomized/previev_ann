@@ -648,7 +648,7 @@ function addLink(e) {
   li.appendChild(document.createTextNode(linkInput.value));
 
   const del = document.createElement('a');
-  del.className="float-right delete-item contener";
+  del.className="float-right delete-item";
   del.innerHTML = '<i class="fas fa-times-circle px-1"></i>';
   li.appendChild(del);
 

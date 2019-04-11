@@ -558,28 +558,32 @@ function actorPanel(person, age) {
 
  </div>
 </div>
+<!-- puste -->
+<div class="row pt-1">
+  <div class="col">
+    &nbsp;
+  </div>
+</div>
 <!-- tooltip -->
 <div class="row">
  <div class="col">
    <div class="row line2">
      <div class="col-3">
-       <div class="text-right">
-
+       <div class="text-left px-2 py-2">
+       <label style="font-size:12px;"><input type="checkbox"> Zgoda na przetwarzanie danych
+       osobowych</label>
+ 
        </div>
      </div>
      <div class="col text-left">
        <div class="row">
-           <div class="col-9 ">
-               <label style="font-size:12px;"><input type="checkbox"> Zgoda na przetwarzanie danych
-                 osobowych</label>
-           </div>
-         <div class="col-3 ">
+         <div class="col px-2 py-2">
            <label style="font-size:12px;"><a href="#">Dodaj zgodę</a></label>
          </div>
        </div>
      </div>
      <div class="col">
-       <div class="text-right">
+       <div class="text-right px-2 py-2">
          <span style="font-size:10px;">
            Utworzone przez: `+ person.WhoCreated + ` Ostatnia edycja: ` +
     person.CreationDate + ` Edytował: ` + person.WhoChanged + `
@@ -632,6 +636,7 @@ var linkGroup = document.querySelector('.link-group');
 var linkInput = document.querySelector('.link-input');
 
 btnLink.addEventListener('click', addLink);
+linkBox.addEventListener('click', removeLink);
 
 linkBox.style.display = 'none';
 
@@ -642,10 +647,12 @@ function addLink(e) {
   li.className = 'list-group-item mx-0';
   li.appendChild(document.createTextNode(linkInput.value));
 
-  console.log(li);
+  const del = document.createElement('a');
+  del.className="float-right delete-item";
+  del.innerHTML = '<i class="far fa-times-circle"></i>';
+  li.appendChild(del);
 
   linkGroup.appendChild(li);
-
   linkArr(linkInput.value);
 
   linkInput.value = '';
@@ -664,3 +671,14 @@ const linkArr = (arr) => {
   console.log(linkArray);
 }
 
+function removeLink(e){
+  if(e.target.parentElement.classList.contains('delete-item')){
+    e.target.parentElement.parentElement.remove();
+
+    //jeśli 0 to usuwa 'link'
+    console.log(linkGroup.children.length);
+    if(linkGroup.children.length == 0){
+      linkBox.style.display = 'none';
+    }
+}
+}

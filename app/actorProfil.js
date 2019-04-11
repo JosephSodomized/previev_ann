@@ -637,10 +637,8 @@ linkBox.style.display = 'none';
 
 function addLink(e) {
   linkBox.style.display = 'block';
-  if (linkInput.value === '') {
-    alert("Dodaj link");
-  }
-
+  if (linkInput.value !== '') {
+    
   const li = document.createElement('li');
   li.className = 'list-group-item mx-0';
   li.appendChild(document.createTextNode(linkInput.value));
@@ -654,6 +652,10 @@ function addLink(e) {
   linkInput.value = '';
 
   e.preventDefault();
+  }
+  else{
+    alert("Dodaj link");
+  }
 }
 
 var linkArray = [];

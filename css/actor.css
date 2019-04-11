@@ -65,3 +65,9 @@
 .close-btn:hover{
     background: url('../img/close_button_dark.svg');
 }
+
+
+
+.fas.fa-times-circle:hover{
+    color: rgb(255, 0, 0);
+}

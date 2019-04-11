@@ -636,9 +636,8 @@ btnLink.addEventListener('click', addLink);
 linkBox.style.display = 'none';
 
 function addLink(e) {
-  linkBox.style.display = 'block';
   if (linkInput.value !== '') {
-    
+  linkBox.style.display = 'block';
   const li = document.createElement('li');
   li.className = 'list-group-item mx-0';
   li.appendChild(document.createTextNode(linkInput.value));

@@ -83,4 +83,16 @@ body{
     align-items: stretch;
 }
 
+.modal-content{
+    background-color: #f3f3f3;
 
+}
+
+.pills .fa-times-circle{
+    color: white;
+}
+
+
+.pills .fa-times-circle:hover{
+    color: black;
+}

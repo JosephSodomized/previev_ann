@@ -1,5 +1,5 @@
 $.getJSON("../app/Actors.php", function (data) {
-    // $.getJSON( "http://aden.pl/projects/just-cast/API/Actors.php", function(data) {
+  // $.getJSON( "http://aden.pl/projects/just-cast/API/Actors.php", function(data) {
 
 
   data.actors.forEach(function (actor) {
@@ -61,3 +61,44 @@ function actorResult(person) {
 
   return html;
 }
+
+var pills = document.querySelector('.pills');
+var piles = [];
+
+//modal
+$('.add_pills').click(() => {
+  
+  $('.pills').css('display', 'block');
+  
+  $('.modal-body .form-control').each(function () {
+    if ($(this).val() !== '') {
+
+      
+      var pill = document.createElement('span');
+      var delBtn = document.createElement('a');
+      pill.className = "badge badge-pill badge-danger";
+      pill.appendChild(document.createTextNode($(this).val()));
+      delBtn.innerHTML = '<i class="fas fa-times-circle pl-2"></i>';
+      pill.appendChild(delBtn);
+      console.log('srodek ' + pill.textContent);
+     
+      pills.appendChild(pill);
+      piles.push(pill.textContent);
+    }
+  });
+
+
+  $('.modal-body .custom-select :selected').each(function () {
+    if ($(this).text() !== '') {
+      var pill = document.createElement('span');
+      var delBtn = document.createElement('a');
+      pill.className = "badge badge-pill badge-danger";
+      pill.appendChild(document.createTextNode($(this).text())); //dodanie etykiety
+      delBtn.innerHTML = '<i class="fas fa-times-circle pl-2"></i>';
+      pill.appendChild(delBtn);
+      console.log('srodek ' + pill.textContent);
+      pills.appendChild(pill);
+      piles.push(pill.textContent);
+    }
+  })
+});

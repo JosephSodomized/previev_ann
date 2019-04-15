@@ -84,6 +84,7 @@ $('.add_pills').click(() => {
      
       pills.appendChild(pill);
       piles.push(pill.textContent);
+      $(this).val("")
     }
   });
 
@@ -99,6 +100,9 @@ $('.add_pills').click(() => {
       console.log('srodek ' + pill.textContent);
       pills.appendChild(pill);
       piles.push(pill.textContent);
+      $(this).prop('selected', function(){
+        return this.defaultSelected;
+      });
     }
   })
 });
